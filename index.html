@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather App</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+</head>
+<body>
 
-    <h1>Weather API Results</h1>
+  <h1>Weather API Results</h1>
 
-    <form action="/" method="post">
-        <label for="cityInput">Enter City Name:</label>
-        <input id="cityInput" type="text" name="cityInput" placeholder="e.g. New York">
-        <button type="submit">Go</button>
-    </form>
+  <form id="weatherForm">
+    <label for="city">Enter City Name:</label>
+    <input id="city" type="text" placeholder="e.g. New York"><br><br>
 
-  </body>
+    <label for="lat">Or Enter Latitude:</label>
+    <input id="lat" type="text" placeholder="e.g. 20.889">
+    <label for="lon">Longitude:</label>
+    <input id="lon" type="text" placeholder="e.g. -156.472"><br><br>
+
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <div id="result"></div>
+
+  <!-- Link your JS file here -->
+  <script src="script.js"></script>
+
+</body>
 </html>
